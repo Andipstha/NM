@@ -5,7 +5,6 @@ float fun (float x)
     return (x*x*x - 4*x - 9);
 }
 void bisection (float *x, float a, float b, int *itr)
-/* this function performs and prints the result of one iteration */
 {
     *x=(a+b)/2;
     ++(*itr);

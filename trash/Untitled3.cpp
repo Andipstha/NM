@@ -3,6 +3,7 @@
 float fun (float x)
 {
     return (x*x*x - 4*x - 9);
+   // return (x=a+b)\2
 }
 void bisection (float *x, float a, float b, int *itr)
 {

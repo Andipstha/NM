@@ -1,25 +1,23 @@
-/* Program: Finding real roots of nonlinear
-   equation using Newton Raphson Method
-   Author: CodeSansar
-   Date: November 18, 2018 */ 
+
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
 #include<stdlib.h>
 
-/* Defining equation to be solved.
-   Change this equation to solve another problem. */
-#define    f(x)    3*x - cos(x) -1
+//#define    f(x)    3*x - cos(x) -1
+//#define   g(x)   3 + sin(x)
+//#define f(x) x*x + 4*x - 9
+//#define g(x) 2*x + 4
+//#define f(x) x*x - 3*x + 2
+//#define g(x) 2*x - 3
+#define f(x) x * x * x * 1.2
+#define g(x) x * x + 0.43429
 
-/* Defining derivative of g(x).
-   As you change f(x), change this function also. */
-#define   g(x)   3 + sin(x)
-
-void main()
+int main()
 {
 	 float x0, x1, f0, f1, g0, e;
 	 int step = 1, N;
-	 clrscr();
+
      /* Inputs */
 	 printf("\nEnter initial guess:\n");
 	 scanf("%f", &x0);
@@ -27,7 +25,6 @@ void main()
 	 scanf("%f", &e);
 	 printf("Enter maximum iteration:\n");
 	 scanf("%d", &N);
-	 /* Implementing Newton Raphson Method */
 	 printf("\nStep\t\tx0\t\tf(x0)\t\tx1\t\tf(x1)\n");
 	 do
 	 {
@@ -59,5 +56,5 @@ void main()
 	 }while(fabs(f1)>e);
 	
 	 printf("\nRoot is: %f", x1);
-	 getch();
+	 return 0;
 }

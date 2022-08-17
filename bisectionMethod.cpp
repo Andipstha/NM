@@ -4,7 +4,8 @@ float fun (float x)
 {
     //return (x*x*x - 4*x - 9);
 	//return (x*x*x  + x*x + x + 7);
-	return (exp(x) - 3 * x);
+	return (x*x+4*x-9);
+	//return (exp(x) - 3 * x);
 }
 void bisection (float *x, float a, float b, int *itr)
 {
